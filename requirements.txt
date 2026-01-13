@@ -1,0 +1,6 @@
+python-dotenv
+langchain==0.1.0
+pinecone-client==3.2.2
+openai==1.40.0
+fastapi==0.104.1
+pytest==7.4.4

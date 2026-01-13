@@ -18,5 +18,7 @@ class Config:
         self.DOCS_PATH = os.getenv("DOCS_PATH", "./documents")
         self.OUTPUT_PATH = os.getenv("OUTPUT_PATH", "./output")
         self.LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
+        self.CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "512"))
+        self.CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "50"))
 
 config = Config()

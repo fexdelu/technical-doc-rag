@@ -54,6 +54,14 @@ class TextSplitter:
         Returns:
             Dictionary with chunk statistics
         """
+        if not chunks:
+            return {
+                "total_chunks": 0,
+                "avg_length": 0,
+                "min_length": 0,
+                "max_length": 0,
+            }
+        
         lengths = [len(chunk.page_content) for chunk in chunks]
         return {
             "total_chunks": len(chunks),

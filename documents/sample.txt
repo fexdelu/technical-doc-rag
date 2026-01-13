@@ -1,0 +1,34 @@
+RAG System Documentation
+
+Introduction
+This is a sample document for testing the RAG (Retrieval-Augmented Generation) system.
+The system is designed to load documents, split them into chunks, create embeddings, and store them in a vector database.
+
+Features
+- Document loading from multiple formats (PDF, TXT, MD)
+- Intelligent text splitting with overlap
+- Vector embeddings using OpenAI
+- Pinecone vector store integration
+- Efficient retrieval for question answering
+
+Architecture
+The system follows a modular architecture with the following components:
+1. Config: Manages environment variables and configuration
+2. DocumentLoader: Loads documents from the filesystem
+3. TextSplitter: Splits documents into manageable chunks
+4. Embeddings: Creates vector representations of text
+5. VectorStore: Stores and retrieves embeddings
+6. RAGPipeline: Orchestrates the entire workflow
+
+Usage
+To use the system, simply place your documents in the documents folder and run the main pipeline.
+The system will automatically process them and make them available for querying.
+
+Best Practices
+- Keep chunk sizes between 256-1024 tokens
+- Use overlap to maintain context between chunks
+- Regularly update your vector store with new documents
+- Monitor embedding costs and optimize as needed
+
+Conclusion
+This RAG system provides a robust foundation for building intelligent document retrieval and question-answering applications.
